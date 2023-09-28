@@ -3,7 +3,6 @@ const app = require('express')();
 
 async function connectToMongoDB() {
     try {
-        console.log(process.env.MONGO_URL);
         mongoose.connect(process.env.MONGO_URL, {
             useNewUrlParser: true,
         });
